@@ -8,9 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gouldie/ppo-new.git"
+    "url": "https://github.com/gouldie/gouldie.git"
   },
-  "author": "Rafael Pedicini <code@rafrex.com>",
+  "author": "MG",
   "license": "MIT",
   "dependencies": {
     "react": "^15.4.1",
