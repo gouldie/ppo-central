@@ -1,28 +1,60 @@
 module.exports = [
   {
-      "name": "Bulbasaur",
-      "type": "Grass",
-      "rarity": "ER",
-      "location": [
-        "Deep Viridian Forest",
-        "Turtle Cove",
-        "Hellfire Cavern"
-      ]
+    "name": "Bulbasaur",
+    "type": ["Grass", "Poison"],
+    "rarity": "ER",
+    "location": [
+      "Deep Viridian Forest",
+      "Turtle Cove",
+      "Hellfire Cavern"
+    ],
+    "ev": {
+      "SpA": 1
     },
-    {
-      "name": "Squirtle",
-      "type": "Water",
-      "rarity": "ER",
-      "location": [
-        "Turtle Cove"
-      ]
+    "evoHtml": "It evolves into <a href='/pokemon/ivysaur'>Ivysaur</a> starting at level 18, which evolves into <a href='/pokemon/venusaur'>Venusaur</a> starting at level 32."
+  },
+  {
+    "name": "Ivysaur",
+    "type": ["Grass", "Poison"],
+    "rarity": "ER",
+    "location": [
+      "Deep Viridian Forest",
+      "Turtle Cove",
+      "Hellfire Cavern"
+    ],
+    "ev": {
+      "SpA": 2
     },
-    {
-      "name": "Charmander",
-      "type": "Fire",
-      "rarity": "ER",
-      "location": [
-        "Hellfire Cavern"
-      ]
-    }
+    "evoHtml": "It evolves from <a href='/pokemon/bulbasaur'>Bulbasaur</a> starting at level 18, and evolves into <a href='/pokemon/venusaur'>Venusaur</a> starting at level 32."
+  },
+  {
+    "name": "Venusaur",
+    "type": ["Grass", "Poison"],
+    "rarity": "ER",
+    "location": [
+      "Deep Viridian Forest",
+      "Turtle Cove",
+      "Hellfire Cavern"
+    ],
+    "ev": {
+      "SpA": 3
+    },
+    "evoHtml": "It evolves from <a href='/pokemon/ivysaur'>Ivysaur</a> starting at level 18. It is the final form of <a href='/pokemon/bulbasaur'>Bulbasaur</a>."
+  },
+  {
+    "name": "Squirtle",
+    "type": ["Water"],
+    "rarity": "ER",
+    "location": [
+      "Turtle Cove"
+    ]
+  },
+  {
+    "name": "Charmander",
+    "type": ["Fire"],
+    "rarity": "ER",
+    "location": [
+      "Hellfire Cavern"
+    ]
+  }
 ]

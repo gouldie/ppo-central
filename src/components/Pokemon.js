@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { mapNameToImg } from '../utils/utils'
+import { pokemonNameToMainImg } from '../utils/utils'
 
 const data = require('../../assets/json/pokemon.json')
 
@@ -11,48 +11,32 @@ export default class Pokemon extends Component {
       return e.name.toLowerCase() === this.props.params.pokemon.toLowerCase()
     })
 
-    this.state = { match, selectedLocation: match.location[0] }
-
-    this.updateSelectedLocation = this.updateSelectedLocation.bind(this)
-  }
-
-  updateSelectedLocation(mapName) {
-    this.setState({ selectedLocation: mapName })
+    this.state = { match }
   }
 
   render() {
-    const {
-      selectedLocation,
-      match
-    } = this.state
-
-    const renderLocations = match.location.map((loc, i) => {
-      return (
-        <span key={i}>
-          <span
-            className={loc === this.state.selectedLocation ? 'active' : ''}
-            onClick={() => {
-              this.updateSelectedLocation(loc)
-            }}
-          >
-            {loc}
-          </span>
-          { match.location.length > i + 1 && ', '}
-        </span>
-      )
-    })
-
-    const locationImgName = mapNameToImg(selectedLocation)
-    const locationImgPath = `../../assets/imgs/maps/${locationImgName}`
+    const { match } = this.state
+    const imgMain = `../../assets/imgs/pokemon-main/${pokemonNameToMainImg(match.name)}`
 
     return (
       <div style={{ padding: '30px 0 0 150px' }}>
         <h2>{match.name}</h2>
-        <h4 className='pokemon-locations'>
-          Found in Maps: {renderLocations}
-        </h4>
-        <div className='pokemon-map'>
-          <img src={locationImgPath} />
+
+        <div className='flex flex-row justify-between' style={{ width: '600px' }}>
+          <div style={{ width: '450px' }}>
+            <p>
+              {match.name} is a <a href='#'> {match.type[0]}</a>
+              {
+                match.type.length > 1 &&
+                <span>/<a href='#'>{match.type[1]}</a></span>
+              }
+              <span> type Pokémon.</span>
+            </p>
+            <p dangerouslySetInnerHTML={{ __html: match.evoHtml }}></p>
+          </div>
+          <div>
+            <img src={imgMain} style={{ width: '150px' }} />
+          </div>
         </div>
       </div>
     )
