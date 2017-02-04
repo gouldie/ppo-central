@@ -151,6 +151,10 @@ a {
   text-align: right;
 }
 
+ul.ReactTabs__TabList {
+  padding-bottom: 1px !important;
+}
+
 .ReactTabs li {
   background-color: #F0F0F0 !important;
 }
