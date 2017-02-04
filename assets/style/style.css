@@ -139,6 +139,22 @@ a {
   color: darkcyan;
 }
 
+.pokemon-table>tbody>tr:nth-child(odd) {
+  background: #ebebf7;
+}
+
+.pokemon-table td {
+  padding: 10px;
+}
+
+.pokemon-table>tbody>tr>td:last-child {
+  text-align: right;
+}
+
+.ReactTabs li {
+  background-color: #F0F0F0 !important;
+}
+
 /* ANIMATIONS */
 
 .menu-item-container img {

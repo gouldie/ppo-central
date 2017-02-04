@@ -4,13 +4,11 @@ module.exports = [
     "type": ["Grass", "Poison"],
     "rarity": "ER",
     "location": [
-      "Deep Viridian Forest",
-      "Turtle Cove",
-      "Hellfire Cavern"
+      { "name": "Deep Viridian Forest", "region": "Kanto", "rarity": "Extremely Rare" }
     ],
-    "ev": {
-      "SpA": 1
-    },
+    "ev": [
+      { "type": "Special Attack", "amount": 1 }
+    ],
     "evo": [
       { "type": "text", "content": "It evolves to " },
       { "type": "link", "content": "Ivysaur", "link": "/pokemon/ivysaur" },
@@ -24,13 +22,12 @@ module.exports = [
     "type": ["Grass", "Poison"],
     "rarity": "ER",
     "location": [
-      "Deep Viridian Forest",
-      "Turtle Cove",
-      "Hellfire Cavern"
+
     ],
-    "ev": {
-      "SpA": 2
-    },
+    "ev": [
+      { "type": "Special Attack", "amount": 1 },
+      { "type": "Special Defense", "amount": 1 }
+    ],
     "evo": [
       { "type": "text", "content": "It evolves from " },
       { "type": "link", "content": "Bulbasaur", "link": "/pokemon/bulbasaur" },
@@ -44,13 +41,12 @@ module.exports = [
     "type": ["Grass", "Poison"],
     "rarity": "ER",
     "location": [
-      "Deep Viridian Forest",
-      "Turtle Cove",
-      "Hellfire Cavern"
+
     ],
-    "ev": {
-      "SpA": 3
-    },
+    "ev": [
+      { "type": "Special Attack", "amount": 2 },
+      { "type": "Special Defense", "amount": 1 }
+    ],
     "evo": [
       { "type": "text", "content": "It evolves from " },
       { "type": "link", "content": "Ivysaur", "link": "/pokemon/ivysaur" },
@@ -64,7 +60,10 @@ module.exports = [
     "type": ["Water"],
     "rarity": "ER",
     "location": [
-      "Turtle Cove"
+      { "name": "Turtle Cove", "region": "Kanto", "rarity": "Extremely Rare" }
+    ],
+    "ev": [
+    { "type": "Defense", "amount": 1 }
     ],
     "evo": [
       { "type": "text", "content": "It evolves to " },
@@ -79,7 +78,11 @@ module.exports = [
     "type": ["Water"],
     "rarity": "ER",
     "location": [
-      "Turtle Cove"
+
+    ],
+    "ev": [
+      { "type": "Defense", "amount": 1 },
+      { "type": "Special Defense", "amount": 1 }
     ],
     "evo": [
       { "type": "text", "content": "It evolves from " },
@@ -94,11 +97,11 @@ module.exports = [
     "type": ["Water"],
     "rarity": "ER",
     "location": [
-      "Turtle Cove"
+
     ],
-    "ev": {
-      "SpA": 3
-    },
+    "ev": [
+    { "type": "Special Defense", "amount": 3 }
+    ],
     "evo": [
       { "type": "text", "content": "It evolves from " },
       { "type": "link", "content": "Wartortle", "link": "/pokemon/wartortle" },
