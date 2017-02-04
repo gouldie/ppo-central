@@ -21,6 +21,10 @@ export function pokemonNameToMainImg(name) {
       return 'venusaur-main.png'
     case 'Squirtle':
       return 'squirtle-main.png'
+    case 'Wartortle':
+      return 'wartortle-main.png'
+    case 'Blastoise':
+      return 'blastoise-main.png'
     case 'Charmander':
       return 'charmander-main.png'
     default:

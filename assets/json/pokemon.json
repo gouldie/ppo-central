@@ -11,7 +11,13 @@ module.exports = [
     "ev": {
       "SpA": 1
     },
-    "evoHtml": "It evolves into <a href='/pokemon/ivysaur'>Ivysaur</a> starting at level 18, which evolves into <a href='/pokemon/venusaur'>Venusaur</a> starting at level 32."
+    "evo": [
+      { "type": "text", "content": "It evolves to " },
+      { "type": "link", "content": "Ivysaur", "link": "/pokemon/ivysaur" },
+      { "type": "text", "content": " starting at level 18, which evolves into " },
+      { "type": "link", "content": "Venusaur", "link": "/pokemon/venusaur" },
+      { "type": "text", "content": " starting at level 36." }
+    ]
   },
   {
     "name": "Ivysaur",
@@ -25,7 +31,13 @@ module.exports = [
     "ev": {
       "SpA": 2
     },
-    "evoHtml": "It evolves from <a href='/pokemon/bulbasaur'>Bulbasaur</a> starting at level 18, and evolves into <a href='/pokemon/venusaur'>Venusaur</a> starting at level 32."
+    "evo": [
+      { "type": "text", "content": "It evolves from " },
+      { "type": "link", "content": "Bulbasaur", "link": "/pokemon/bulbasaur" },
+      { "type": "text", "content": " starting at level 18, and evolves into " },
+      { "type": "link", "content": "Venusaur", "link": "/pokemon/venusaur" },
+      { "type": "text", "content": " starting at level 36." }
+    ]
   },
   {
     "name": "Venusaur",
@@ -39,7 +51,13 @@ module.exports = [
     "ev": {
       "SpA": 3
     },
-    "evoHtml": "It evolves from <a href='/pokemon/ivysaur'>Ivysaur</a> starting at level 18. It is the final form of <a href='/pokemon/bulbasaur'>Bulbasaur</a>."
+    "evo": [
+      { "type": "text", "content": "It evolves from " },
+      { "type": "link", "content": "Ivysaur", "link": "/pokemon/ivysaur" },
+      { "type": "text", "content": " starting at level 36. It is the final form of " },
+      { "type": "link", "content": "Bulbasaur", "link": "/pokemon/bulbasaur" },
+      { "type": "text", "content": "." }
+    ]
   },
   {
     "name": "Squirtle",
@@ -47,14 +65,46 @@ module.exports = [
     "rarity": "ER",
     "location": [
       "Turtle Cove"
+    ],
+    "evo": [
+      { "type": "text", "content": "It evolves to " },
+      { "type": "link", "content": "Wartortle", "link": "/pokemon/wartortle" },
+      { "type": "text", "content": " starting at level 18, which evolves into " },
+      { "type": "link", "content": "Blastoise", "link": "/pokemon/blastoise" },
+      { "type": "text", "content": " starting at level 36." }
     ]
   },
   {
-    "name": "Charmander",
-    "type": ["Fire"],
+    "name": "Wartortle",
+    "type": ["Water"],
     "rarity": "ER",
     "location": [
-      "Hellfire Cavern"
+      "Turtle Cove"
+    ],
+    "evo": [
+      { "type": "text", "content": "It evolves from " },
+      { "type": "link", "content": "Squirtle", "link": "/pokemon/squirtle" },
+      { "type": "text", "content": " starting at level 18, and evolves into " },
+      { "type": "link", "content": "Blastoise", "link": "/pokemon/blastoise" },
+      { "type": "text", "content": " starting at level 36." }
+    ]
+  },
+  {
+    "name": "Blastoise",
+    "type": ["Water"],
+    "rarity": "ER",
+    "location": [
+      "Turtle Cove"
+    ],
+    "ev": {
+      "SpA": 3
+    },
+    "evo": [
+      { "type": "text", "content": "It evolves from " },
+      { "type": "link", "content": "Wartortle", "link": "/pokemon/wartortle" },
+      { "type": "text", "content": " starting at level 36. It is the final form of " },
+      { "type": "link", "content": "Squirtle", "link": "/pokemon/squirtle" },
+      { "type": "text", "content": "." }
     ]
   }
 ]

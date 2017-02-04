@@ -24,10 +24,10 @@ export default class PokemonList extends Component {
                   <Link to={`/pokemon/${p.name.toLowerCase()}`}>{p.name}</Link>
                 </div>
                 <div style={{ width: '200px' }}>
-                  <a href='#'>{p.type[0]}</a>
+                  <Link to={'#'}>{p.type[0]}</Link>
                   {
                     p.type.length > 1 &&
-                    <span>/<a href='#'>{p.type[1]}</a></span>
+                    <span>/<Link to={'#'}>{p.type[1]}</Link></span>
                   }
                 </div>
                 <div style={{ width: '200px' }}>
