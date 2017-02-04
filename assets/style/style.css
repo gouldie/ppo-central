@@ -1,0 +1,155 @@
+/* FLEXBOX */
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.align-items-start {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.align-items-end {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.justify-start {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+}
+
+.justify-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.justify-around {
+  -ms-flex-pack: distribute;
+   justify-content: space-around;
+}
+
+.flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+/* GLOBAL */
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif !important;
+  background: #c7d7d8 !important;
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  transition: left 0.25s ease-out;
+  height: 100vh;
+  position: absolute;
+}
+
+.search {
+  width: 400px;
+  background: #8e7f96;
+  height: 100%;
+}
+
+.search-input {
+  width: 80% !important;
+}
+
+.search-input-container {
+  margin-top: 20px;
+}
+
+.menu {
+  width: 100px;
+  background: #aa94b7;
+  height: 100%;
+}
+
+/* POKEMON-LIST */
+
+.pokemon-list>div:nth-child(odd) {
+    background: #ebebf7;
+}
+
+.pokemon-list-item a {
+  text-decoration: none;
+  color: black;
+}
+
+/* POKEMON */
+
+.pokemon-map img {
+  width: 600px;
+}
+
+.pokemon-locations>span>span:first-of-type {
+  cursor: pointer;
+}
+
+.pokemon-locations .active {
+  color: darkcyan;
+}
+
+/* ANIMATIONS */
+
+.menu-item-container img {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    cursor: pointer;
+}
+
+.menu-item-container img:hover,
+.menu-item-container img:focus,
+.menu-item-container img:active {
+    transform: scale(1.1);
+}

@@ -1,0 +1,28 @@
+module.exports = [
+  {
+      "name": "Bulbasaur",
+      "type": "Grass",
+      "rarity": "ER",
+      "location": [
+        "Deep Viridian Forest",
+        "Turtle Cove",
+        "Hellfire Cavern"
+      ]
+    },
+    {
+      "name": "Squirtle",
+      "type": "Water",
+      "rarity": "ER",
+      "location": [
+        "Turtle Cove"
+      ]
+    },
+    {
+      "name": "Charmander",
+      "type": "Fire",
+      "rarity": "ER",
+      "location": [
+        "Hellfire Cavern"
+      ]
+    }
+]
