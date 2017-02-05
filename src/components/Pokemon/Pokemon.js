@@ -53,8 +53,11 @@ export default class Pokemon extends Component {
       'Poison Point'
     ]
 
+	  if (!this.state.imgLoaded) return <div></div>
+
     return (
-      <div style={{ padding: '30px 0 0 150px', display: this.state.imgLoaded ? 'block' : 'none' }}>
+
+      <div style={{ padding: '30px 0 0 150px' }}>
 
         <h2>{match.name}</h2>
 
