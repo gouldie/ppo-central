@@ -83,7 +83,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #0a3073;
+  color: lightseagreen;
 }
 
 /* SIDEBAR */
@@ -92,6 +92,7 @@ a {
   transition: left 0.25s ease-out;
   height: 100vh;
   position: absolute;
+  z-index: 5;
 }
 
 .search {
@@ -157,6 +158,20 @@ ul.ReactTabs__TabList {
 
 .ReactTabs li {
   background-color: #F0F0F0 !important;
+}
+
+.base-stats-container>div {
+  margin: 5px;
+  border-radius: 2%;
+}
+
+.base-stats-container>div>div:first-child {
+  margin-right: 10px;
+  width: 120px;
+}
+
+.base-stats-container>div>div:nth-child(2) {
+  transition: width 0.5s ease-out;
 }
 
 /* ANIMATIONS */

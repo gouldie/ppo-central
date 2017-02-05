@@ -4,7 +4,7 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 import App from './components/App'
 import PokemonList from './components/PokemonList'
-import Pokemon from './components/Pokemon'
+import Pokemon from './components/Pokemon/Pokemon'
 import Home from './components/Home'
 
 
