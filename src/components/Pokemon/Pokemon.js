@@ -53,11 +53,9 @@ export default class Pokemon extends Component {
       'Poison Point'
     ]
 
-	  if (!this.state.imgLoaded) return <div></div>
-
     return (
 
-      <div style={{ padding: '30px 0 0 150px' }}>
+      <div style={{ padding: '30px 0 0 150px', display: this.state.imgLoaded ? 'block' : 'none' }}>
 
         <h2>{match.name}</h2>
 
@@ -92,7 +90,7 @@ export default class Pokemon extends Component {
         </div>
 
         <div className="flex flex-row justify-between" style={{ width: '700px', height: '150px', margin: '20px 0' }}>
-          <BaseStats stats={stats} />
+          {this.state.imgLoaded && <BaseStats stats={stats} /> }
           <Abilities abilities={abilities}/>
         </div>
 
